@@ -30,6 +30,19 @@
         <!-- see original projects for developer information -->
     </developers>
 
+    <distributionManagement>
+        <repository>
+          <id>nexus-releases</id>
+          <name>Releases</name>
+         <url>https://repo1.acceldata.dev/repository/odp-staging-release/</url>
+       </repository>
+       <snapshotRepository>
+         <id>nexus-snapshots</id>
+         <name>Snapshot</name>
+         <url>https://repo1.acceldata.dev/repository/odp-staging-snapshot/</url>
+       </snapshotRepository>
+     </distributionManagement>
+
     <scm>
         <connection>scm:git:git://github.com/trinodb/trino-hadoop-apache.git</connection>
         <developerConnection>scm:git:git://github.com/trinodb/trino-hadoop-apache.git</developerConnection>
