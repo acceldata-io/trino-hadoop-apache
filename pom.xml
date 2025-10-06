@@ -57,8 +57,8 @@
     <dep.slf4j.version>1.7.36</dep.slf4j.version>
     <dep.hadoop.version>3.2.3.3.2.3.4-2001</dep.hadoop.version>
     <commons-lang3.version>3.12.0</commons-lang3.version>
-    <jackson2.version>2.12.7</jackson2.version>
-    <jackson2.databind.version>2.12.7.1</jackson2.databind.version>
+    <jackson2.version>2.16.1</jackson2.version>
+    <jackson2.databind.version>2.16.1</jackson2.databind.version>
   </properties>
 
   <!-- Resolving hadoop-common conflicts with common-compress version -->
