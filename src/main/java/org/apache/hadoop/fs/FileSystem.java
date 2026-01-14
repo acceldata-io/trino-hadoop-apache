@@ -4316,7 +4316,7 @@ public abstract class FileSystem extends Configured
     }
 
     @Override
-    protected FileSystemDataOutputStreamBuilder getThisBuilder() {
+    public FileSystemDataOutputStreamBuilder getThisBuilder() {
       return this;
     }
   }
