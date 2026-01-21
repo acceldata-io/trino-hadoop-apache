@@ -43,6 +43,21 @@
        </snapshotRepository>
      </distributionManagement>
 
+     <repositories>
+    <repository>
+      <id>odp-central-staging</id>
+      <name>Releases</name>
+      <url>https://repo1.acceldata.dev/repository/odp-central-staging/</url>
+    </repository>
+    <repository>
+      <id>odp-central</id>
+      <name>Releases</name>
+      <url>https://repo1.acceldata.dev/repository/odp-central/</url>
+    </repository>
+
+
+  </repositories>
+
     <scm>
         <connection>scm:git:git://github.com/trinodb/trino-hadoop-apache.git</connection>
         <developerConnection>scm:git:git://github.com/trinodb/trino-hadoop-apache.git</developerConnection>
