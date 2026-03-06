@@ -55,7 +55,7 @@
         <project.build.targetJdk>21</project.build.targetJdk>
         <shadeBase>io.trino.hadoop.\$internal</shadeBase>
         <dep.slf4j.version>1.7.36</dep.slf4j.version>
-        <dep.hadoop.version>3.3.6.3.3.6.3-SNAPSHOT</dep.hadoop.version>
+        <dep.hadoop.version>3.2.3.3.2.3.6-2</dep.hadoop.version>
     </properties>
 
     <!-- Resolving hadoop-common conflicts with common-compress version -->
