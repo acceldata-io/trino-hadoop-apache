@@ -505,6 +505,7 @@
                                     <exclude>org.xerial.snappy:snappy-java</exclude>
                                     <exclude>org.lz4:lz4-java</exclude>
                                     <exclude>com.squareup.okhttp3:okhttp</exclude>
+                                    <exclude>com.squareup.okio:okio-jvm</exclude>
                                     <exclude>com.squareup.okio:okio</exclude>
                                     <exclude>org.jetbrains.kotlin:kotlin-stdlib</exclude>
                                     <exclude>org.jetbrains.kotlin:kotlin-stdlib-common</exclude>
