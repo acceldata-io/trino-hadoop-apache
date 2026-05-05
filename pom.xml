@@ -508,6 +508,13 @@
                                     <exclude>com.squareup.okio:okio</exclude>
                                     <exclude>org.jetbrains.kotlin:kotlin-stdlib</exclude>
                                     <exclude>org.jetbrains.kotlin:kotlin-stdlib-common</exclude>
+                                    <exclude>com.squareup.okio:okio-jvm</exclude>
+                                    <exclude>org.jetbrains.kotlin:kotlin-stdlib-jdk7</exclude>
+                                    <exclude>org.jetbrains.kotlin:kotlin-stdlib-jdk8</exclude>
+                                    <exclude>org.bouncycastle:bcprov-jdk18on</exclude>
+                                    <exclude>org.bouncycastle:bcpkix-jdk18on</exclude>
+                                    <exclude>org.bouncycastle:bcprov-jdk15on</exclude>
+                                    <exclude>org.bouncycastle:bcpkix-jdk15on</exclude>
                                 </excludes>
                             </artifactSet>
                             <transformers>
