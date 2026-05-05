@@ -634,6 +634,10 @@
                                         <exclude>META-INF/*.DSA</exclude>
                                         <exclude>META-INF/*.RSA</exclude>
                                         <exclude>module-info.java</exclude>
+                                        <exclude>META-INF/DEPENDENCIES</exclude>
+                                        <exclude>META-INF/*.kotlin_module</exclude>
+                                        <exclude>META-INF/proguard/**</exclude>
+                                        <exclude>META-INF/FastDoubleParser-*</exclude>
                                     </excludes>
                                 </filter>
                                 <filter>
