@@ -603,6 +603,26 @@
                                     <pattern>javax.activation</pattern>
                                     <shadedPattern>${shadeBase}.javax.activation</shadedPattern>
                                 </relocation>
+                                <relocation>
+                                    <pattern>org.jboss.threads</pattern>
+                                    <shadedPattern>${shadeBase}.org.jboss.threads</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>org.xnio</pattern>
+                                    <shadedPattern>${shadeBase}.org.xnio</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>org.wildfly.common</pattern>
+                                    <shadedPattern>${shadeBase}.org.wildfly.common</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>org.wildfly.client.config</pattern>
+                                    <shadedPattern>${shadeBase}.org.wildfly.client.config</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>org.codehaus.jettison</pattern>
+                                    <shadedPattern>${shadeBase}.org.codehaus.jettison</shadedPattern>
+                                </relocation>
                             </relocations>
                             <filters>
                                 <filter>
