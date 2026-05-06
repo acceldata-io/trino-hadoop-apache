@@ -69,7 +69,7 @@
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-text</artifactId>
-                <version>1.11.0</version>
+                <version>1.13.1</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
@@ -508,6 +508,13 @@
                                     <exclude>com.squareup.okio:okio</exclude>
                                     <exclude>org.jetbrains.kotlin:kotlin-stdlib</exclude>
                                     <exclude>org.jetbrains.kotlin:kotlin-stdlib-common</exclude>
+                                    <exclude>com.squareup.okio:okio-jvm</exclude>
+                                    <exclude>org.jetbrains.kotlin:kotlin-stdlib-jdk7</exclude>
+                                    <exclude>org.jetbrains.kotlin:kotlin-stdlib-jdk8</exclude>
+                                    <exclude>org.bouncycastle:bcprov-jdk18on</exclude>
+                                    <exclude>org.bouncycastle:bcpkix-jdk18on</exclude>
+                                    <exclude>org.bouncycastle:bcprov-jdk15on</exclude>
+                                    <exclude>org.bouncycastle:bcpkix-jdk15on</exclude>
                                 </excludes>
                             </artifactSet>
                             <transformers>
@@ -596,6 +603,26 @@
                                     <pattern>javax.activation</pattern>
                                     <shadedPattern>${shadeBase}.javax.activation</shadedPattern>
                                 </relocation>
+                                <relocation>
+                                    <pattern>org.jboss.threads</pattern>
+                                    <shadedPattern>${shadeBase}.org.jboss.threads</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>org.xnio</pattern>
+                                    <shadedPattern>${shadeBase}.org.xnio</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>org.wildfly.common</pattern>
+                                    <shadedPattern>${shadeBase}.org.wildfly.common</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>org.wildfly.client.config</pattern>
+                                    <shadedPattern>${shadeBase}.org.wildfly.client.config</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>org.codehaus.jettison</pattern>
+                                    <shadedPattern>${shadeBase}.org.codehaus.jettison</shadedPattern>
+                                </relocation>
                             </relocations>
                             <filters>
                                 <filter>
@@ -607,6 +634,10 @@
                                         <exclude>META-INF/*.DSA</exclude>
                                         <exclude>META-INF/*.RSA</exclude>
                                         <exclude>module-info.java</exclude>
+                                        <exclude>META-INF/DEPENDENCIES</exclude>
+                                        <exclude>META-INF/*.kotlin_module</exclude>
+                                        <exclude>META-INF/proguard/**</exclude>
+                                        <exclude>META-INF/FastDoubleParser-*</exclude>
                                     </excludes>
                                 </filter>
                                 <filter>
