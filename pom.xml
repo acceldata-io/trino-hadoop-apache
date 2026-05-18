@@ -10,7 +10,7 @@
 
     <groupId>io.trino.hadoop</groupId>
     <artifactId>hadoop-apache</artifactId>
-    <version>3.3.5-3.3.3.6.3-SNAPSHOT</version>
+    <version>3.3.5-3.3.3.6.4-1</version>
 
     <name>hadoop-apache</name>
     <description>Shaded version of Apache Hadoop for Trino</description>
@@ -55,7 +55,7 @@
         <project.build.targetJdk>21</project.build.targetJdk>
         <shadeBase>io.trino.hadoop.\$internal</shadeBase>
         <dep.slf4j.version>1.7.36</dep.slf4j.version>
-        <dep.hadoop.version>3.3.6.3.3.6.3-SNAPSHOT</dep.hadoop.version>
+        <dep.hadoop.version>3.3.6.3.3.6.4-1</dep.hadoop.version>
     </properties>
 
     <!-- Resolving hadoop-common conflicts with common-compress version -->
@@ -69,12 +69,12 @@
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-text</artifactId>
-                <version>1.11.0</version>
+                <version>1.13.1</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
-                <version>3.14.0</version>
+                <version>3.18.0</version>
             </dependency>
             <dependency>
                 <groupId>commons-codec</groupId>
@@ -508,6 +508,13 @@
                                     <exclude>com.squareup.okio:okio</exclude>
                                     <exclude>org.jetbrains.kotlin:kotlin-stdlib</exclude>
                                     <exclude>org.jetbrains.kotlin:kotlin-stdlib-common</exclude>
+                                    <exclude>com.squareup.okio:okio-jvm</exclude>
+                                    <exclude>org.jetbrains.kotlin:kotlin-stdlib-jdk7</exclude>
+                                    <exclude>org.jetbrains.kotlin:kotlin-stdlib-jdk8</exclude>
+                                    <exclude>org.bouncycastle:bcprov-jdk18on</exclude>
+                                    <exclude>org.bouncycastle:bcpkix-jdk18on</exclude>
+                                    <exclude>org.bouncycastle:bcprov-jdk15on</exclude>
+                                    <exclude>org.bouncycastle:bcpkix-jdk15on</exclude>
                                 </excludes>
                             </artifactSet>
                             <transformers>
@@ -596,6 +603,26 @@
                                     <pattern>javax.activation</pattern>
                                     <shadedPattern>${shadeBase}.javax.activation</shadedPattern>
                                 </relocation>
+                                <relocation>
+                                    <pattern>org.jboss.threads</pattern>
+                                    <shadedPattern>${shadeBase}.org.jboss.threads</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>org.xnio</pattern>
+                                    <shadedPattern>${shadeBase}.org.xnio</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>org.wildfly.common</pattern>
+                                    <shadedPattern>${shadeBase}.org.wildfly.common</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>org.wildfly.client.config</pattern>
+                                    <shadedPattern>${shadeBase}.org.wildfly.client.config</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>org.codehaus.jettison</pattern>
+                                    <shadedPattern>${shadeBase}.org.codehaus.jettison</shadedPattern>
+                                </relocation>
                             </relocations>
                             <filters>
                                 <filter>
@@ -607,6 +634,10 @@
                                         <exclude>META-INF/*.DSA</exclude>
                                         <exclude>META-INF/*.RSA</exclude>
                                         <exclude>module-info.java</exclude>
+                                        <exclude>META-INF/DEPENDENCIES</exclude>
+                                        <exclude>META-INF/*.kotlin_module</exclude>
+                                        <exclude>META-INF/proguard/**</exclude>
+                                        <exclude>META-INF/FastDoubleParser-*</exclude>
                                     </excludes>
                                 </filter>
                                 <filter>
