@@ -51,11 +51,12 @@
     </scm>
 
     <properties>
+        <odp.release.version>3.3.6.5-SNAPSHOT</odp.release.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.targetJdk>21</project.build.targetJdk>
         <shadeBase>io.trino.hadoop.\$internal</shadeBase>
         <dep.slf4j.version>1.7.36</dep.slf4j.version>
-        <dep.hadoop.version>3.3.6.3.3.6.5-SNAPSHOT</dep.hadoop.version>
+        <dep.hadoop.version>3.3.6.${odp.release.version}</dep.hadoop.version>
     </properties>
 
     <!-- Resolving hadoop-common conflicts with common-compress version -->
