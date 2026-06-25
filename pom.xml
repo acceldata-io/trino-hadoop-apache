@@ -51,11 +51,12 @@
   </scm>
 
   <properties>
+    <odp.release.version>3.2.3.7-2</odp.release.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.build.targetJdk>21</project.build.targetJdk>
     <shadeBase>io.trino.hadoop.\$internal</shadeBase>
     <dep.slf4j.version>1.7.36</dep.slf4j.version>
-    <dep.hadoop.version>3.2.3.3.2.3.7-2</dep.hadoop.version>
+    <dep.hadoop.version>3.2.3.${odp.release.version}</dep.hadoop.version>
     <commons-lang3.version>3.18.0</commons-lang3.version>
     <jackson2.version>2.18.6</jackson2.version>
     <jackson2.databind.version>2.18.6</jackson2.databind.version>
