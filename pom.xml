@@ -69,7 +69,7 @@
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-text</artifactId>
-                <version>1.13.1</version>
+                <version>1.14.0</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
@@ -507,7 +507,8 @@
                                     <exclude>com.squareup.okhttp3:okhttp</exclude>
                                     <exclude>com.squareup.okio:okio</exclude>
                                     <exclude>org.jetbrains.kotlin:kotlin-stdlib</exclude>
-                                    <exclude>org.jetbrains.kotlin:kotlin-stdlib-common</exclude>
+				    <exclude>org.jetbrains.kotlin:kotlin-stdlib-common</exclude>
+				    <exclude>io.netty:*</exclude>
                                     <exclude>com.squareup.okio:okio-jvm</exclude>
                                     <exclude>org.jetbrains.kotlin:kotlin-stdlib-jdk7</exclude>
                                     <exclude>org.jetbrains.kotlin:kotlin-stdlib-jdk8</exclude>
@@ -637,7 +638,8 @@
                                         <exclude>META-INF/DEPENDENCIES</exclude>
                                         <exclude>META-INF/*.kotlin_module</exclude>
                                         <exclude>META-INF/proguard/**</exclude>
-                                        <exclude>META-INF/FastDoubleParser-*</exclude>
+					<exclude>META-INF/FastDoubleParser-*</exclude>
+					<exclude>org/jspecify/**</exclude>
                                     </excludes>
                                 </filter>
                                 <filter>
