@@ -945,7 +945,7 @@ public class KMSClientProvider extends KeyProvider implements CryptoExtension,
             throws IOException {
         try {
             encKeyVersionQueue.initializeQueuesForKeys(keyNames);
-        } catch (ExecutionException e) {
+        } catch (IOException e) {
             throw new IOException(e);
         }
     }
