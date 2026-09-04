@@ -510,6 +510,7 @@
                                     <exclude>org.jetbrains.kotlin:kotlin-stdlib</exclude>
 				    <exclude>org.jetbrains.kotlin:kotlin-stdlib-common</exclude>
 				    <exclude>io.netty:*</exclude>
+				    <exclude>org.glassfish.hk2.external:aopalliance-repackaged</exclude>
                                     <exclude>com.squareup.okio:okio-jvm</exclude>
                                     <exclude>org.jetbrains.kotlin:kotlin-stdlib-jdk7</exclude>
                                     <exclude>org.jetbrains.kotlin:kotlin-stdlib-jdk8</exclude>
