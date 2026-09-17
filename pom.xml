@@ -10,7 +10,7 @@
 
   <groupId>io.trino.hadoop</groupId>
   <artifactId>hadoop-apache</artifactId>
-  <version>3.2.3-3.2.3.7-2</version>
+  <version>3.2.3-3.2.3.701-2</version>
 
   <name>hadoop-apache</name>
   <description>Shaded version of Apache Hadoop for Trino</description>
@@ -46,12 +46,12 @@
   <scm>
     <connection>scm:git:git://github.com/trinodb/trino-hadoop-apache.git</connection>
     <developerConnection>scm:git:git://github.com/trinodb/trino-hadoop-apache.git</developerConnection>
-    <tag>3.2.3-3.2.3.7-2</tag>
+    <tag>3.2.3-3.2.3.701-2</tag>
     <url>https://github.com/trinodb/trino-hadoop-apache</url>
   </scm>
 
   <properties>
-    <odp.release.version>3.2.3.7-2</odp.release.version>
+    <odp.release.version>3.2.3.701-2</odp.release.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.build.targetJdk>21</project.build.targetJdk>
     <shadeBase>io.trino.hadoop.\$internal</shadeBase>
