@@ -1760,6 +1760,21 @@ public class UserGroupInformation {
     }
 
     /**
+     * Get the groups names for the user as a Set.
+     * @return the set of users with the primary group first. If the command
+     *     fails, it returns an empty set.
+     */
+    public Set<String> getGroupsSet() {
+        ensureInitialized();
+        try {
+            return groups.getGroupsSet(getShortUserName());
+        } catch (IOException ie) {
+            LOG.debug("Failed to get groups for user {}", getShortUserName(), ie);
+            return Collections.emptySet();
+        }
+    }
+
+    /**
      * Return the username.
      */
     @Override
